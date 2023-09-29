@@ -1,0 +1,11 @@
+[
+  { "icon": "./assets/icons/html.svg", "name": "HTML5" },
+  { "icon": "./assets/icons/css.svg", "name": "CSS3" },
+  { "icon": "./assets/icons/js.svg", "name": "Javascript" },
+  { "icon": "./assets/icons/reactjs.svg", "name": "ReactJS" },
+  { "icon": "./assets/icons/nodejs.svg", "name": "NodeJS" },
+  { "icon": "./assets/icons/postgres.svg", "name": "PostgresSQL" },
+  { "icon": "./assets/icons/express.svg", "name": "ExpressJS" },
+  { "icon": "./assets/icons/redux.svg", "name": "ReduxJS" },
+  { "icon": "./assets/icons/mui.svg", "name": "MaterialUI" }
+]

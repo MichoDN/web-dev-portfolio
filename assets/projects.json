@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Central Music",
+    "technologies": [
+      "ReactJS",
+      "CSS"
+    ],
+    "code": "https://github.com/MichoDN/React-LandingPage-CentralMusic",
+    "demo": "https://michodncentralmusic.netlify.app/",
+    "description": "Check out the Responsive Central Music Landing Page where you will find a variety of articles related to music.",
+    "online" : false
+  },
+  {
+    "name": "Pokedex",
+    "technologies": [
+      "ReactJS",
+      "Redux",
+      "CSS"
+    ],
+    "code": "https://github.com/MichoDN/pokedex-react",
+    "demo": "https://michdnpokedex.netlify.app/",
+    "description": "React web application utilizing Axios for API calls, search filters, page routing,  and state management with redux.",
+    "online" : true
+  },
+  {
+    "name": "E-commerce",
+    "technologies": [
+      "ReactJS",
+      "Redux",
+      "CSS"
+    ],
+    "code": "https://github.com/MichoDN/e-commerce_react",
+    "demo": "https://subtle-lollipop-890659.netlify.app/#",
+    "description": "Digital ecommerce platform that provides complete functionalities; search filters, buy and categorized product by routes.",
+    "online" : false
+  }
+]
