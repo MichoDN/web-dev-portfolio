@@ -77,10 +77,14 @@ small{
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 30px;
+  padding: 7vh 30px;
 
   max-width: 1000px;
   margin: 0 auto;
+}
+
+#bottom{
+  padding-top: 7vh;
 }
 
 .cardList{
@@ -229,13 +233,13 @@ small{
 .containedButton:hover,
 .miniButton:hover,
 .smallContainedButton:hover{
-  transform: scale(1.08);
+  transform: scale(1.04);
 }
 
 .containedButton:active,
 .miniButton:active,
 .smallContainedButton:active{
-  transform: scale(0.92);
+  transform: scale(0.96);
 }
 
 .email{
@@ -251,6 +255,14 @@ small{
   h1,
   .sectionTitle {
     font-size: 40px;
+  }
+
+  .bodySection {
+    padding: 10vh 60px;
+  }
+
+  #bottom{
+    padding-top: 10vh;
   }
 
   .projectButton {
@@ -343,6 +355,10 @@ small{
 
   .cardTitle {
     font-size: 28px;
+  }
+
+  .bodySection {
+    padding: 10vh 80px;
   }
 
   p {

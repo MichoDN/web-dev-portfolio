@@ -9,6 +9,7 @@
   top: 0;
   right: 0;
   left: 0;
+  
   margin: auto;
   z-index: 1;
 }
@@ -168,18 +169,18 @@ footer {
 #techList {
   background-color: #1D1C1C;
 
-  width: 100%;
+  width: fit-content;
   max-width: 660px;
   margin: 0 auto;
 
-  padding: 20px 10px;
+  padding: 10px 10px;
+  gap: 10px;
   border-radius: 8px;
 
   display: grid;
   justify-content: space-evenly;
 
   grid-template-columns: repeat(3, 70px);
-  row-gap: 20px;
 }
 
 
@@ -207,7 +208,6 @@ footer {
 
 .softskillCard {
   width: 100%;
-  /* max-height: 100px; */
   padding: 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -220,17 +220,19 @@ footer {
   gap: 5px;
 }
 
-#contact>div {
-  background-color: white;
-  color: black;
+#contact{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 60px 0px;
+}
 
-  padding: 30px 20px;
-  border-radius: 15px;
+#contact>div {
+  color: black;
+  max-width: 840px;
+  margin: 0 auto;
+
 
   height: fit-content;
-  width: 100%;
-  max-width: 660px;
-  margin: 100px auto;
 
   display: flex;
   flex-direction: column;
@@ -333,8 +335,9 @@ footer {
 
   #techList {
     grid-template-columns: repeat(3, 90px);
-    gap: 35px;
-    padding: 25px 35px;
+
+    padding: 16px;
+    gap: 16px;
   }
 
   #techList>li {
@@ -345,10 +348,6 @@ footer {
   .softskillCard {
     max-height: 150px;
     border-bottom: 5px #3c3c3c solid;
-  }
-
-  .bodySection {
-    padding: 30px 60px;
   }
 
   #contact>div>h1 {
@@ -419,18 +418,14 @@ footer {
 
   #techList {
     grid-template-columns: repeat(3, 126px);
-    gap: 35px;
-    padding: 25px 35px;
+    gap: 24px;
+    padding: 24px 24px;
   }
 
   #techList>li {
     height: 140px;
     width: 126px;
     padding: 18px;
-  }
-
-  .bodySection {
-    padding: 30px 80px;
   }
 
   #contact>div>h1 {
