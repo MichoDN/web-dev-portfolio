@@ -1,37 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap');
 
 :root {
-  --bgcolor: #242424;
-  --buttonColor: #303030;
-  --barColor: #1B1B1B;
-  --cardbgColor: #292929;
-  --techInCardbgColor: #3A3A3A;
+  --gray100: #1B1B1B;
+  --gray200: #242424;
+  --gray300: #242424;
+  --gray400: #292929;
+  --gray500: #303030;
+  --gray600: #3A3A3A;
+  --gray700: #838383;
+  --gray800: #808080;
+  --gray900: #D2D2D2;
+  --gray1000: #fff;
 
-  --textColor: #fff;
-  --paragraphColor: #D2D2D2;
-  --miniColor: #838383;
   --cardTitleColor: #EDA02C;
 }
 
 ::-webkit-scrollbar{
-  width: 12px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-track{
   background-color: transparent;
   transition: background-color 10s ease-in-out 0.2s;
+  background-color: var(--gray100);
 }
 
 ::-webkit-scrollbar-track:hover{
-  background-color: rgb(48, 48, 48);
+  background-color: var(--gray400);
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: rgb(128, 128, 128);
+  background-color: var(--gray600);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(192, 192, 192);
+  background-color: var(--gray800);
 }
 
 * {
@@ -44,8 +47,8 @@
 body {
   font-family: 'Inter', sans-serif;
 
-  background-color: var(--bgcolor);
-  color: var(--textColor);
+  background-color: var(--gray200);
+  color: var(--gray1000);
 }
 
 button {
@@ -58,9 +61,12 @@ button:hover {
   cursor: pointer;
 }
 
-a {
-  color: black;
+a{
   text-decoration: none;
+}
+
+.email {
+  color: var(--gray300);
   width: fit-content;
 
   display: flex;
@@ -68,7 +74,7 @@ a {
   gap: 0.5ch;
 }
 
-a:hover {
+.email:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -81,11 +87,11 @@ h1 {
 p {
   font-weight: 400;
   font-size: 12px;
-  color: var(--paragraphColor);
+  color: var(--gray900);
 }
 
 small{
-  color: var(--miniColor);
+  color: var(--gray700);
   font-weight: 300;
   font-size: 12px;
 }
@@ -128,8 +134,8 @@ small{
   align-items: center;
   gap: 10px;
 
-  background-color: var(--buttonColor);
-  color: var(--textColor);
+  background-color: var(--gray500);
+  color: var(--gray1000);
 }
 
 .containedButton>svg{
@@ -137,7 +143,7 @@ small{
   height: 20px;
 }
 
-.miniButton {
+/* .miniButton {
   background-color: white;
   width: 30px;
   height: 30px;
@@ -147,7 +153,7 @@ small{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .smallContainedButton{
   font-weight: 600;
@@ -158,15 +164,15 @@ small{
   display: grid;
   place-items: center;
 
-  background-color: var(--buttonColor);
-  color: var(--textColor);
+  background-color: var(--gray500);
+  color: var(--gray1000);
 }
 
 .projectButton {
   padding: 0px 2px 2px 8px;
-  border-bottom: 1px solid var(--textColor);
-  border-left: 1px solid var(--textColor);
-  color: var(--textColor);
+  border-bottom: 1px solid var(--gray1000);
+  border-left: 1px solid var(--gray1000);
+  color: var(--gray1000);
   background-color: transparent;
 }
 
@@ -174,8 +180,8 @@ small{
   border-bottom: none;
   border-left: none;
 
-  border-top: 1px solid var(--textColor);
-  border-right: 1px solid var(--textColor);
+  border-top: 1px solid var(--gray1000);
+  border-right: 1px solid var(--gray1000);
 }
 
 .sectionTitle {
@@ -183,11 +189,11 @@ small{
   text-align: center;
   font-weight: 800;
   font-size: 32px;
-  color: var(--textColor);
+  color: var(--gray1000);
 }
 
 .projectCard{
-  background-color: var(--cardbgColor);
+  background-color: var(--gray400);
   max-height: 160px;
   width: 100%;
   padding: 12px;
@@ -213,8 +219,8 @@ small{
 
 
 .technologies>li{
-  color: var(--textColor);
-  background-color: var(--techInCardbgColor);
+  color: var(--gray1000);
+  background-color: var(--gray100);
 
   font-size: 11px;
   font-weight: 400;
@@ -246,19 +252,16 @@ small{
 }
 
 .containedButton,
-.miniButton,
 .smallContainedButton{
   transition: 0.25s;
 }
 
 .containedButton:hover,
-.miniButton:hover,
 .smallContainedButton:hover{
   transform: scale(1.04);
 }
 
 .containedButton:active,
-.miniButton:active,
 .smallContainedButton:active{
   transform: scale(0.96);
 }
@@ -288,21 +291,23 @@ small{
 
   .projectButton {
     font-size: 18px;
-    border-bottom: 2px solid white;
-    border-left: 2px solid white;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+
     border-top: 2px solid transparent;
     border-right: 2px solid transparent;
   }
 
   .projectButton:hover {
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    border-top: 2px solid;
+    border-right: 2px solid;
+
     border-bottom: 2px solid transparent;
     border-left: 2px solid transparent;
   }
 
   .projectButton:active{
-    border: 2px solid white;
+    border: 2px solid;
   }
 
   .containedButton {
@@ -342,21 +347,23 @@ small{
 
   .projectButton {
     font-size: 18px;
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+
     border-top: 3px solid transparent;
     border-right: 3px solid transparent;
   }
 
   .projectButton:hover {
-    border-top: 3px solid white;
-    border-right: 3px solid white;
+    border-top: 3px solid;
+    border-right: 3px solid;
+
     border-bottom: 3px solid transparent;
     border-left: 3px solid transparent;
   }
   
   .projectButton:active{
-    border: 3px solid white;
+    border: 3px solid;
   }
 
   .containedButton {

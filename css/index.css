@@ -106,7 +106,7 @@
 
 #navbar,
 footer {
-  background-color: var(--barColor);
+  background-color: var(--gray100);
   height: 70px;
   width: 100%;
 }
@@ -148,7 +148,7 @@ footer {
 #navbarMenu>li>button {
   color: white;
   font-weight: 600;
-  background-color: var(--cardbgColor);
+  background-color: var(--gray400);
 
   width: 100vw;
   height: 70px;
@@ -156,8 +156,9 @@ footer {
 
 #navbarMenu>li>button:hover,
 #navbarMenu>li>button:active {
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  border-color: var(--gray1000);
 }
 
 #projects {
@@ -167,7 +168,7 @@ footer {
 
 
 #techList {
-  background-color: #1D1C1C;
+  background-color: var(--gray100);
 
   width: fit-content;
   max-width: 660px;
@@ -191,7 +192,7 @@ footer {
   border-radius: 5px;
   margin: 0 auto;
 
-  background-color: var(--cardbgColor);
+  background-color: var(--gray400);
   transition: 0.2s;
 }
 
@@ -212,8 +213,9 @@ footer {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
-  background-color: var(--cardbgColor);
-  border-bottom: 3px #3c3c3c solid;
+  background-color: var(--gray400);
+  border-bottom: 3px solid;
+  border-color: var(--gray800)!important;
 
   display: flex;
   flex-direction: column;
@@ -221,13 +223,13 @@ footer {
 }
 
 #contact{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--gray1000);
   width: 100%;
   padding: 60px 0px;
 }
 
 #contact>div {
-  color: black;
+  color: var(--gray300);
   max-width: 840px;
   margin: 0 auto;
 
@@ -347,7 +349,7 @@ footer {
 
   .softskillCard {
     max-height: 150px;
-    border-bottom: 5px #3c3c3c solid;
+    border-bottom: 5px;
   }
 
   #contact>div>h1 {
@@ -413,7 +415,7 @@ footer {
   .softskillCard {
     max-height: 201px;
     gap: 10px;
-    border-bottom: 6px #3c3c3c solid;
+    border-bottom: 6px solid;
   }
 
   #techList {
@@ -431,5 +433,4 @@ footer {
   #contact>div>h1 {
     font-size: 44px;
   }
-
 }
