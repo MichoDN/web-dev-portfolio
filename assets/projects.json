@@ -19,7 +19,19 @@
     ],
     "code": "https://github.com/MichoDN/pokedex-react",
     "demo": "https://michdnpokedex.netlify.app/",
-    "description": "React web application utilizing Axios for API calls, search filters, page routing,  and state management with redux.",
+    "description": "React web application utilizing Axios for API calls, search filters, page routing, and state management with redux.",
+    "online" : true
+  },
+  {
+    "name": "Weather app",
+    "technologies": [
+      "ReactJS",
+      "CSS",
+      "API's Integration"
+    ],
+    "code": "https://github.com/MichoDN/react-weather-app/",
+    "demo": "https://michdnweather.netlify.app/",
+    "description": "A small React web application utilizing the WeatherAPI that shows information about the current weather at the user's location.",
     "online" : true
   },
   {

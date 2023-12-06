@@ -166,6 +166,10 @@ footer {
   flex-direction: column;
 }
 
+#projects>div{
+  text-align: center;
+}
+
 
 #techList {
   background-color: var(--techListBG);
@@ -221,6 +225,16 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+#aboutParagraph{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7ch;
+}
+
+#aboutParagraph>p{
+  font-weight: 300;
 }
 
 #contact{
@@ -323,7 +337,6 @@ footer {
   }
 
   .projectCard {
-    max-height: 190px;
     padding: 16px;
   }
 
@@ -399,7 +412,6 @@ footer {
   }
 
   .projectCard {
-    max-height: 260px;
     padding: 20px;
     gap: 9px;
   }

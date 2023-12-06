@@ -179,7 +179,6 @@ small{
 
 .projectCard{
   background-color: var(--cardBG);
-  max-height: 160px;
   width: 100%;
   padding: 12px;
   border-radius: 10px;
@@ -201,7 +200,6 @@ small{
   width: 100%;
   overflow: hidden;
 }
-
 
 .technologies>li{
   color: var(--textColor);
