@@ -106,7 +106,7 @@
 
 #navbar,
 footer {
-  background-color: var(--gray100);
+  background-color: var(--menuBG);
   height: 70px;
   width: 100%;
 }
@@ -148,7 +148,7 @@ footer {
 #navbarMenu>li>button {
   color: white;
   font-weight: 600;
-  background-color: var(--gray400);
+  background-color: var(--cardBG);
 
   width: 100vw;
   height: 70px;
@@ -158,7 +158,7 @@ footer {
 #navbarMenu>li>button:active {
   border-bottom: 2px solid;
   border-top: 2px solid;
-  border-color: var(--gray1000);
+  border-color: var(--textColor);
 }
 
 #projects {
@@ -168,7 +168,8 @@ footer {
 
 
 #techList {
-  background-color: var(--gray100);
+  background-color: var(--techListBG);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.30) inset, 1px 2px 3px 0px rgba(0, 0, 0, 0.50) inset;
 
   width: fit-content;
   max-width: 660px;
@@ -192,7 +193,7 @@ footer {
   border-radius: 5px;
   margin: 0 auto;
 
-  background-color: var(--gray400);
+  background-color: var(--techListCardBG);
   transition: 0.2s;
 }
 
@@ -213,9 +214,9 @@ footer {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
-  background-color: var(--gray400);
+  background-color: var(--cardBG);
   border-bottom: 3px solid;
-  border-color: var(--gray800)!important;
+  border-color: var(--softSkillBorder)!important;
 
   display: flex;
   flex-direction: column;
@@ -223,13 +224,13 @@ footer {
 }
 
 #contact{
-  background-color: var(--gray1000);
+  background-color: var(--contactBG);
   width: 100%;
   padding: 60px 0px;
 }
 
 #contact>div {
-  color: var(--gray300);
+  color: var(--contactTextColor);
   max-width: 840px;
   margin: 0 auto;
 
@@ -420,8 +421,8 @@ footer {
 
   #techList {
     grid-template-columns: repeat(3, 126px);
-    gap: 24px;
-    padding: 24px 24px;
+    gap: 32px;
+    padding: 40px 40px;
   }
 
   #techList>li {

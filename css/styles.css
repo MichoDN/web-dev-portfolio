@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap');
 
-:root {
-  --gray100: #1B1B1B;
-  --gray200: #242424;
-  --gray300: #242424;
-  --gray400: #292929;
-  --gray500: #303030;
-  --gray600: #3A3A3A;
-  --gray700: #838383;
-  --gray800: #808080;
-  --gray900: #D2D2D2;
-  --gray1000: #fff;
-
-  --cardTitleColor: #EDA02C;
-}
-
 ::-webkit-scrollbar{
   width: 16px;
 }
@@ -22,19 +7,19 @@
 ::-webkit-scrollbar-track{
   background-color: transparent;
   transition: background-color 10s ease-in-out 0.2s;
-  background-color: var(--gray100);
+  background-color: var(--menuBG);
 }
 
 ::-webkit-scrollbar-track:hover{
-  background-color: var(--gray400);
+  background-color: var(--cardBG);
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: var(--gray600);
+  background-color: var(--thumbBG);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--gray800);
+  background-color: var(--thumbBGHover);
 }
 
 * {
@@ -47,8 +32,8 @@
 body {
   font-family: 'Inter', sans-serif;
 
-  background-color: var(--gray200);
-  color: var(--gray1000);
+  background-color: var(--bodyBG);
+  color: var(--textColor);
 }
 
 button {
@@ -66,7 +51,7 @@ a{
 }
 
 .email {
-  color: var(--gray300);
+  color: var(--contactTextColor);
   width: fit-content;
 
   display: flex;
@@ -87,11 +72,11 @@ h1 {
 p {
   font-weight: 400;
   font-size: 12px;
-  color: var(--gray900);
+  color: var(--textColor);
 }
 
 small{
-  color: var(--gray700);
+  color: var(--textColor);
   font-weight: 300;
   font-size: 12px;
 }
@@ -134,8 +119,8 @@ small{
   align-items: center;
   gap: 10px;
 
-  background-color: var(--gray500);
-  color: var(--gray1000);
+  background-color: var(--buttonBG);
+  color: var(--textColor);
 }
 
 .containedButton>svg{
@@ -164,15 +149,15 @@ small{
   display: grid;
   place-items: center;
 
-  background-color: var(--gray500);
-  color: var(--gray1000);
+  background-color: var(--buttonBG);
+  color: var(--textColor);
 }
 
 .projectButton {
   padding: 0px 2px 2px 8px;
-  border-bottom: 1px solid var(--gray1000);
-  border-left: 1px solid var(--gray1000);
-  color: var(--gray1000);
+  border-bottom: 1px solid var(--textColor);
+  border-left: 1px solid var(--textColor);
+  color: var(--textColor);
   background-color: transparent;
 }
 
@@ -180,8 +165,8 @@ small{
   border-bottom: none;
   border-left: none;
 
-  border-top: 1px solid var(--gray1000);
-  border-right: 1px solid var(--gray1000);
+  border-top: 1px solid var(--textColor);
+  border-right: 1px solid var(--textColor);
 }
 
 .sectionTitle {
@@ -189,11 +174,11 @@ small{
   text-align: center;
   font-weight: 800;
   font-size: 32px;
-  color: var(--gray1000);
+  color: var(--textColor);
 }
 
 .projectCard{
-  background-color: var(--gray400);
+  background-color: var(--cardBG);
   max-height: 160px;
   width: 100%;
   padding: 12px;
@@ -219,8 +204,8 @@ small{
 
 
 .technologies>li{
-  color: var(--gray1000);
-  background-color: var(--gray100);
+  color: var(--textColor);
+  background-color: var(--tagBG);
 
   font-size: 11px;
   font-weight: 400;
@@ -230,7 +215,7 @@ small{
 }
 
 .cardTitle {
-  color: var(--cardTitleColor);
+  color: var(--textHighlight);
   font-size: 16px;
   font-weight: 600;
 }

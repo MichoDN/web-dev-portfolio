@@ -1,0 +1,21 @@
+:root {
+  --bodyBG: #242424;
+  --menuBG: #1B1B1B;
+  --cardBG:#292929;
+  --tagBG:#3A3A3A;
+  --buttonBG: #303030;
+  --contactBG: #fff;
+  --techListBG: #1B1B1B;
+  --techListCardBG: #1B1B1B;
+  
+  --thumbBG: #383838;
+  --thumbBGHover: #454545;
+  
+  --textColor: #fff;
+  --textDisabled: #858585;
+  --textContrast: #242424;
+  --textHighlight: #EDA02C;
+  --contactTextColor: #242424;
+
+  --softSkillBorder: #EDA02C;
+}

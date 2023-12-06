@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/darkTheme.css" id="theme">
   <link rel="stylesheet" href="./css/animations.css">
   <title>Michael D. Portfolio</title>
 </head>
@@ -22,7 +23,7 @@
               fill="#838383" />
           </svg>
           <button onmouseenter="grabKnob()" onmouseleave="releaseKnob()" onmousedown="pullKnob()"
-            onmouseup="stopPullingKnob()" id="knob">
+            onmouseup="stopPullingKnob()" onclick="switchTheme()" id="knob">
             <svg width="20" viewBox="0 0 148 252" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M124 0H24V30H124V0ZM28.4247 48C25.8984 48 23.7691 49.8844 23.4618 52.3918L0.374558 240.784C-0.355921 246.744 4.29501 252 10.3003 252H137.7C143.705 252 148.356 246.744 147.625 240.784L124.538 52.3918C124.231 49.8843 122.102 48 119.575 48H28.4247Z"
@@ -112,7 +113,7 @@
     </section>
     
     <div id="bottom">
-      <section id='contact' class='animatedElement'>
+      <section id='contact'>
         <div id="getInTouch">
           <h1>Get in touch</h1>
           <div id='social'>
