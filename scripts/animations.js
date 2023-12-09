@@ -34,23 +34,3 @@ const hiddenElements = document.querySelectorAll(".animatedElement");
 hiddenElements.forEach((el) => {
   observer.observe(el);
 })
-
-//lightSwitch animation
-const lightSwitch = document.getElementById("lightSwitch")
-
-function grabKnob() {
-  lightSwitch.classList.add("grabbed")
-}
-
-function releaseKnob() {
-  lightSwitch.classList.remove("grabbed")
-  lightSwitch.classList.remove("pulled")
-}
-
-function pullKnob() {
-  lightSwitch.classList.add("pulled")
-}
-
-function stopPullingKnob() {
-  lightSwitch.classList.remove("pulled")
-}

@@ -16,30 +16,6 @@ function handleScroll(elementId) {
   element.scrollIntoView({ behavior: "smooth" });
 }
 
-function switchTheme() {
-  const themeElement = document.getElementById("theme");
-  const themes = {
-    darkTheme: "http://localhost:5500/css/darkTheme.css",
-    lightTheme: "http://localhost:5500/css/lightTheme.css"
-  }
-  
-  switch (themeElement.href) {
-    
-    case themes.darkTheme:
-      themeElement.href = themes.lightTheme
-      break;
-
-    case themes.lightTheme:
-      themeElement.href = themes.darkTheme
-      break;
-
-    default:
-      themeElement.href = themes.darkTheme
-      break;
-  }
-
-}
-
 fetch("./assets/projects.json")
   .then(res => res.json())
   .then(projects => {

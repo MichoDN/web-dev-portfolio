@@ -15,7 +15,7 @@
 }
 
 #hero {
-  padding: 0px 30px 60px 30px;
+  padding: 100px 30px 100px 30px;
   width: 100%;
   height: 100vh;
   max-height: 1024px;
@@ -28,65 +28,18 @@
   justify-content: space-between;
 }
 
-#lightSwitch{
-  opacity: 0;
-}
-
-#hero>button,
-#lightSwitch,
-#heroTopPart>:last-child {
+#heroButton{
   z-index: 2;
+  align-self: center;
 }
 
-#heroTopPart {
-  display: flex;
-  flex-direction: column;
-}
-
-#heroTopPart>:last-child {
-  width: fit-content;
-}
-
-#lightSwitch {
-  width: fit-content;
-  height: fit-content;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  position: relative;
-  top: -25px;
-  align-self: flex-end;
-  transition: 0.28s;
-
-  animation: inverse-swap-in 1.5s forwards;
-}
-
-#knob:hover{
-  cursor: grab;
-}
-
-#knob:active{
-  cursor: grabbing;
-}
-
-#lightSwitch.grabbed{
-  top: -15px;
-}
-
-#lightSwitch.pulled{
-  top: 0px;
-}
-
-#animatedLine {
+#animatedTextLine {
   width: fit-content;
   display: flex;
   gap: 1ch;
 }
 
-#animatedLine>:first-child {
+#animatedTextLine>:first-child {
   white-space: nowrap;
 }
 
@@ -96,10 +49,6 @@
   overflow: hidden;
   animation: typing 6s steps(22) alternate-reverse infinite,
     cursor 0.7s step-end infinite;
-}
-
-#hero>button {
-  align-self: center;
 }
 
 #navbar {
@@ -292,18 +241,13 @@ footer {
 
 @media screen and (min-width: 520px) {
   #hero {
-    padding: 0px 60px 60px 60px;
-  }
-
-  #lightSwitch {
-    transform: scale(1.3);
+    padding: 120px 60px 120px 60px;
   }
 
   nav,
   footer {
     height: 85px;
   }
-
 
   #navbarMenu>li {
     animation: none;
@@ -383,11 +327,7 @@ footer {
 
 @media screen and (min-width: 774px) {
   #hero {
-    padding: 0px 80px 80px 80px;
-  }
-
-  #lightSwitch {
-    transform: scale(1.6);
+    padding: 160px 80px 160px 80px;
   }
 
   .toolbar {
