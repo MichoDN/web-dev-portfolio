@@ -9,7 +9,7 @@ https://michdnportfolio.netlify.app
 ### Clone repository 
 Pasting this in your console will download the project in the folder you opened.
 ```
-git clone https://github.com/MichoDN/MichoDN-Portfolio/
+git clone https://github.com/MichoDN/web-dev-portfolio/
 ```
 
 ### Run project
