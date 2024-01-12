@@ -19,3 +19,4 @@ Open VS Code in the projects folder and press go live using live server extensio
 - HTML
 - CSS
 - JAVASCRIPT
+- ParticleJS
