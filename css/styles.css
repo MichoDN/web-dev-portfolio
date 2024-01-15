@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;500;600;800&display=swap');
 
 ::-webkit-scrollbar{
   width: 16px;
@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Poppins", sans-serif;
 
   background-color: var(--bodyBG);
   color: var(--textColor);
@@ -127,18 +127,6 @@ small{
   width: 20px;
   height: 20px;
 }
-
-/* .miniButton {
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  padding: 4px;
-  border-radius: 8px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .smallContainedButton{
   font-weight: 600;

@@ -9,7 +9,7 @@
   top: 0;
   right: 0;
   left: 0;
-  
+
   margin: auto;
   z-index: 1;
 }
@@ -28,7 +28,7 @@
   justify-content: space-between;
 }
 
-#heroButton{
+#heroButton {
   z-index: 2;
   align-self: center;
 }
@@ -123,7 +123,7 @@ footer {
   flex-direction: column;
 }
 
-#projects>div{
+#projects>div {
   text-align: center;
 }
 
@@ -176,24 +176,24 @@ footer {
 
   background-color: var(--cardBG);
   border-bottom: 3px solid;
-  border-color: var(--softSkillBorder)!important;
+  border-color: var(--softSkillBorder) !important;
 
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-#aboutParagraph{
+#aboutParagraph {
   display: flex;
   flex-direction: column;
   gap: 0.7ch;
 }
 
-#aboutParagraph>p{
+#aboutParagraph>p {
   font-weight: 300;
 }
 
-#contact{
+#contact {
   background-color: var(--contactBG);
   width: 100%;
   padding: 60px 0px;
@@ -231,13 +231,13 @@ footer {
   margin-bottom: 10px;
 }
 
-.animatedElement{
+.animatedElement {
   opacity: 0;
   transform: translateY(100px) scale(0.8);
   transition: 0.2s;
 }
 
-.shown{
+.shown {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
@@ -254,6 +254,14 @@ footer {
 
   #navbarMenu>li {
     animation: none;
+  }
+
+  #navbarMenu>li>button:hover,
+  #navbarMenu>li>button:active {
+    border-bottom: none;
+    border-top: none;
+    border-color: var(--textColor);
+    color: var(--textHighlight);
   }
 
   .toolBar {
