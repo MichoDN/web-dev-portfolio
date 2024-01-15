@@ -114,6 +114,10 @@ footer {
   border-color: var(--textColor);
 }
 
+#faviconButton>svg {
+  height: 35px;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -122,7 +126,6 @@ footer {
 #projects>div{
   text-align: center;
 }
-
 
 #techList {
   background-color: var(--techListBG);
@@ -337,10 +340,6 @@ footer {
   nav,
   footer {
     height: 90px;
-  }
-
-  #faviconButton>svg {
-    height: 350px;
   }
 
   #navbarMenu {
