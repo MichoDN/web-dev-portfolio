@@ -28,9 +28,45 @@
   justify-content: space-between;
 }
 
+#hero>:nth-child(2){
+  z-index: 2;
+  user-select: none;
+  width: fit-content;
+}
+
 #heroButton {
   z-index: 2;
   align-self: center;
+}
+
+#heroSocialMediaButtonGroup{
+  display: flex;
+  gap: 8px;
+
+  position: relative;
+  top: -29px;
+  left: 10px;
+}
+
+.heroSocialMediaButton{
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  transition-duration: 0.3s;
+}
+
+.heroSocialMediaButton:hover{
+  transform: scale(1.1);
+}
+
+.heroSocialMediaButton>svg{
+  width: 100%;
+  height: 100%;
+  max-width: 17px;
+  fill: #242424;
 }
 
 #animatedTextLine {
@@ -233,6 +269,10 @@ footer {
   margin-bottom: 10px;
 }
 
+#getInTouch{
+  padding: 0px 40px;
+}
+
 .animatedElement {
   opacity: 0;
   transform: translateY(100px) scale(0.8);
@@ -247,6 +287,20 @@ footer {
 @media screen and (min-width: 520px) {
   #hero {
     padding: 120px 60px 120px 60px;
+  }
+
+  #heroSocialMediaButtonGroup{
+    top: -35px;
+    gap: 10px;
+  }
+
+  .heroSocialMediaButton{
+    height: 30px;
+    width: 30px;
+  }
+
+  .heroSocialMediaButton>svg{
+    max-width: 20px;
   }
 
   nav,
@@ -326,6 +380,10 @@ footer {
     max-height: 150px;
     border-bottom: 5px;
   }
+  
+#getInTouch{
+  padding: 0px 80px;
+}
 
   #contact>div>h1 {
     font-size: 38px;
@@ -342,6 +400,21 @@ footer {
 @media screen and (min-width: 774px) {
   #hero {
     padding: 160px 80px 160px 80px;
+  }
+
+  #heroSocialMediaButtonGroup{
+    top: -42px;
+    left: 16px;
+    gap: 14px;
+  }
+
+  .heroSocialMediaButton{
+    height: 35px;
+    width: 35px;
+  }
+
+  .heroSocialMediaButton>svg{
+    max-width: 23px;
   }
 
   .toolbar {
