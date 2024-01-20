@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;500;600;800&display=swap');
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 16px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: transparent;
   transition: background-color 10s ease-in-out 0.2s;
   background-color: var(--menuBG);
 }
 
-::-webkit-scrollbar-track:hover{
+::-webkit-scrollbar-track:hover {
   background-color: var(--cardBG);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG);
 }
 
@@ -46,7 +46,7 @@ button:hover {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -67,6 +67,7 @@ a{
 h1 {
   font-weight: 500;
   font-size: 32px;
+  line-height: 32px;
 }
 
 p {
@@ -75,17 +76,17 @@ p {
   color: var(--textColor);
 }
 
-small{
+small {
   color: var(--textColor);
   font-weight: 300;
   font-size: 12px;
 }
 
-.invisible{
+.invisible {
   opacity: 0;
 }
 
-.bodySection{
+.bodySection {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -95,11 +96,11 @@ small{
   margin: 0 auto;
 }
 
-#bottom{
+#bottom {
   padding-top: 7vh;
 }
 
-.cardList{
+.cardList {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -123,12 +124,12 @@ small{
   color: var(--textColor);
 }
 
-.containedButton>svg{
+.containedButton>svg {
   width: 20px;
   height: 20px;
 }
 
-.smallContainedButton{
+.smallContainedButton {
   font-weight: 600;
   padding: 12px 24px;
   width: fit-content;
@@ -165,7 +166,7 @@ small{
   color: var(--textColor);
 }
 
-.projectCard{
+.projectCard {
   background-color: var(--cardBG);
   width: 100%;
   padding: 12px;
@@ -177,19 +178,19 @@ small{
   gap: 6px;
 }
 
-.projectCard>.buttonWrap{
+.projectCard>.buttonWrap {
   display: flex;
   gap: 8px;
 }
 
-.projectCard>.technologies{
+.projectCard>.technologies {
   display: flex;
   gap: 5px;
   width: 100%;
   overflow: hidden;
 }
 
-.technologies>li{
+.technologies>li {
   color: var(--textColor);
   background-color: var(--tagBG);
 
@@ -210,11 +211,11 @@ small{
   box-shadow: 0px 8px 12px 4px rgba(0, 0, 0, 0.30);
 }
 
-.smallShadow{
+.smallShadow {
   box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.50);
 }
 
-.bothShadows{
+.bothShadows {
   box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.30), 1px 2px 3px 0px rgba(0, 0, 0, 0.50);
 }
 
@@ -223,40 +224,42 @@ small{
 }
 
 .containedButton,
-.smallContainedButton{
+.smallContainedButton {
   transition: 0.25s;
 }
 
 .containedButton:hover,
-.smallContainedButton:hover{
+.smallContainedButton:hover {
   transform: scale(1.04);
 }
 
 .containedButton:active,
-.smallContainedButton:active{
+.smallContainedButton:active {
   transform: scale(0.96);
 }
 
-.email{
+.email {
   font-weight: 300;
   font-size: 14px;
 }
 
-.fadeIn{
+.fadeIn {
   animation: fadeIn 1s forwards;
 }
 
 @media screen and (min-width: 520px) {
+
   h1,
   .sectionTitle {
     font-size: 40px;
+    line-height: 40px;
   }
 
   .bodySection {
     padding: 10vh 60px;
   }
 
-  #bottom{
+  #bottom {
     padding-top: 10vh;
   }
 
@@ -277,7 +280,7 @@ small{
     border-left: 2px solid transparent;
   }
 
-  .projectButton:active{
+  .projectButton:active {
     border: 2px solid;
   }
 
@@ -287,7 +290,7 @@ small{
     font-size: 24px;
   }
 
-  .containedButton>svg{
+  .containedButton>svg {
     height: 20px;
   }
 
@@ -305,15 +308,17 @@ small{
     font-size: 16px;
   }
 
-  .navButton{
+  .navButton {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 774px) {
+
   h1,
   .sectionTitle {
     font-size: 48px;
+    line-height: 48px;
   }
 
   .projectButton {
@@ -332,8 +337,8 @@ small{
     border-bottom: 3px solid transparent;
     border-left: 3px solid transparent;
   }
-  
-  .projectButton:active{
+
+  .projectButton:active {
     border: 3px solid;
   }
 
@@ -342,12 +347,12 @@ small{
     padding: 20px 36px;
     font-size: 28px;
   }
-  
-  .containedButton>svg{
+
+  .containedButton>svg {
     height: 24px;
   }
-  
-  .miniButton{
+
+  .miniButton {
     height: 45px;
     width: 45px;
   }

@@ -36,6 +36,7 @@
 #animatedTextLine {
   width: fit-content;
   display: flex;
+  align-items: baseline;
   gap: 1ch;
 }
 
@@ -214,6 +215,7 @@ footer {
 
 #contact>div>h1 {
   font-size: 32px;
+  line-height: 32px;
   font-weight: 800;
   text-align: center;
 }
@@ -327,6 +329,7 @@ footer {
 
   #contact>div>h1 {
     font-size: 38px;
+    line-height: 38px;
   }
 }
 
@@ -396,5 +399,6 @@ footer {
 
   #contact>div>h1 {
     font-size: 44px;
+    line-height: 44px;
   }
 }
