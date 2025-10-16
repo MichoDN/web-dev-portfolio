@@ -45,13 +45,12 @@
 
   position: relative;
   top: -29px;
-  left: 10px;
 }
 
 .heroSocialMediaButton{
   background-color: white;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 70px;
   border-radius: 8px;
   display: grid;
   place-items: center;
@@ -295,8 +294,7 @@ footer {
   }
 
   .heroSocialMediaButton{
-    height: 30px;
-    width: 30px;
+    width: 85px;
   }
 
   .heroSocialMediaButton>svg{
@@ -403,14 +401,13 @@ footer {
   }
 
   #heroSocialMediaButtonGroup{
-    top: -42px;
-    left: 16px;
+    top: -43px;
     gap: 14px;
   }
 
   .heroSocialMediaButton{
     height: 35px;
-    width: 35px;
+    width: 100px;
   }
 
   .heroSocialMediaButton>svg{
